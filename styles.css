@@ -373,11 +373,25 @@ h3 {
 }
 
 .copy-hero {
-  padding: clamp(28px, 5vw, 54px) 0 12px;
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+  padding: clamp(34px, 6vw, 64px) clamp(24px, 5vw, 72px);
+  text-align: center;
+}
+
+.copy-hero .eyebrow {
+  margin-bottom: 14px;
 }
 
 .copy-hero h1 {
   color: var(--coffee);
+  max-width: 12em;
+}
+
+.copy-hero p {
+  max-width: 680px;
+  margin: 22px auto 0;
 }
 
 .copy-list {
